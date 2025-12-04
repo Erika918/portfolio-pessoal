@@ -1,0 +1,88 @@
+ # 📁 Portfólio Pessoal — Erika Barbosa
+
+Este é o repositório do meu **portfólio pessoal**, criado para apresentar minhas habilidades, projetos e serviços como desenvolvedora web. O objetivo é oferecer uma navegação clara, moderna e acessível, destacando minha experiência em frontend, PWAs e aplicações para pequenos negócios.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+* **HTML5**
+* **CSS3** (layout responsivo + animações suaves)
+* **JavaScript**
+* **GitHub Pages** (hospedagem)
+* **Acessibilidade Web (A11y)** — aria-labels, navegação por teclado, contraste
+* **SEO básico** — meta tags, descrição, título estruturado
+
+---
+
+## 📌 Funcionalidades
+
+* Página inicial com apresentação profissional
+* Avatar otimizado com `srcset` para melhor performance
+* Seção de **projetos** com botões de Demo e Repositório
+* Área de **serviços** mostrando as soluções que ofereço
+* Link direto para **LinkedIn**, **GitHub** e contato
+* Botão de WhatsApp para mensagens rápidas
+* Layout completamente **responsivo** (mobile-first)
+
+---
+
+## 🧩 Estrutura de Pastas
+
+```
+/
+├── index.html
+├── styles/
+│   └── style.css
+├── img/
+│   ├── perfil.jpg
+│   ├── banner.jpg
+│   └── outros...
+└── icons/
+    └── icon-192.png
+```
+
+---
+
+## 🌐 Acesso ao Portfólio
+
+Você pode visualizar a versão ao vivo aqui:
+👉 **[https://erika918.github.io/portfolio/](https://erika918.github.io/portfolio/)**
+
+> (Se o link precisar ser alterado, basta informar que atualizo.)
+
+---
+
+## 🛠 Como editar
+
+### 1. Clone o repositório
+
+```
+git clone https://github.com/erika918/portfolio-pessoal.git
+```
+
+### 2. Abra o projeto
+
+Basta abrir o arquivo `index.html` no navegador.
+
+### 3. Faça ajustes no CSS ou HTML conforme desejar.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença **MIT**, permitindo uso, modificação e distribuição.
+
+---
+
+## ✨ Autora
+
+**Erika Barbosa**
+Desenvolvedora Web — Frontend / UI / PWAs
+
+🔗 LinkedIn: [https://www.linkedin.com/in/erika-barbosa-da-cruz-587911186/](https://www.linkedin.com/in/erika-barbosa-da-cruz-587911186/)
+🐙 GitHub: [https://github.com/erika918](https://github.com/erika918)
+📧 Email: [erikaregis42@gmail.com](mailto:erikaregis42@gmail.com)
+
+---
+

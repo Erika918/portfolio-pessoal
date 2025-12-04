@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Erika Barbosa — Desenvolvedora Web</title>
+  <meta name="description" content="Portfólio de Erika Barbosa — PWAs, Frontend e projetos para pequenos negócios.">
+  <link rel="icon" href="./icons/icon-192.png">
+
+  <!-- Google Fonts: Inter (substitua se preferir hospedar localmente) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#0ea5a4;--glass: rgba(255,255,255,0.03);--radius:14px}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Arial;margin:0;background:linear-gradient(180deg,#071027 0%,#081428 100%);color:#e6eef6;line-height:1.45;padding:28px 18px;display:flex;justify-content:center}
+    .wrap{width:100%;max-width:1100px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:12px;overflow:hidden;border:2px solid rgba(255,255,255,0.06);background:var(--glass);flex:0 0 auto}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .name{font-weight:700;font-size:18px}
+    nav{display:flex;gap:12px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:8px;font-weight:600}
+    nav a:hover, nav a:focus{background:rgba(255,255,255,0.02);color:#fff}
+
+    .hero{background: linear-gradient(180deg, rgba(124,58,237,0.06), rgba(124,58,237,0.02));padding:28px;border-radius:var(--radius); box-shadow: 0 10px 30px rgba(7,8,15,0.6);display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:center}
+    h1{margin:0;font-size:28px;line-height:1.05}
+    .lead{color:var(--muted);margin-top:8px;line-height:1.5}
+    .ctas{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:700;border:none;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .card{background:rgba(255,255,255,0.03);padding:14px;border-radius:12px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:18px}
+    .project h3{margin:0 0 6px 0}
+    .meta{font-size:13px;color:var(--muted)}
+    .badge{display:inline-block;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02);font-size:13px;margin-right:8px}
+    .project-actions{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    footer{margin-top:26px;color:var(--muted);text-align:center;font-size:14px}
+    .socials{display:flex;gap:10px;align-items:center;margin-top:8px}
+    .socials a{display:inline-flex;align-items:center;gap:8px;padding:8px;border-radius:8px;background:rgba(255,255,255,0.02);text-decoration:none;color:var(--muted)}
+    .kicker{font-size:13px;color:var(--muted);margin-bottom:8px}
+
+    /* original smaller-file styles preserved */
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+    /* responsive */
+    @media (max-width:980px){.hero{grid-template-columns:1fr}nav{display:none}}
+    @media (max-width:520px){.avatar{width:56px;height:56px}.name{font-size:16px}.contact-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link" style="position:absolute;left:-999px;">Pular para o conteúdo</a>
+
+  <div class="wrap" id="main">
+    <header>
+      <div class="brand">
+        <div class="avatar">
+          <!-- substitua por sua foto em ./img/perfil.jpg -->
+          <img src="./img/perfilimg.jpg" alt="Foto de Erika Barbosa" loading="lazy">
+        </div>
+        <div>
+          <div class="name">Erika Barbosa</div>
+          <div class="meta" style="font-size:13px;color:var(--muted)">Frontend · PWAs · Sites para pequenos negócios</div>
+        </div>
+      </div>
+
+      <nav aria-label="Menu principal">
+        <a href="#projects">Projetos</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contato</a>
+        <a href="https://www.linkedin.com/in/erika-barbosa-da-cruz-587911186/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="display:inline-flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 13.5V6H2.542v7.5h2.401zm-1.2-8.583c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zM13.458 13.5V9.359c0-2.212-1.178-3.243-2.748-3.243-1.27 0-1.845.7-2.165 1.193V6H6.144c.03.657 0 7.5 0 7.5h2.401V9.611c0-.207.015-.414.076-.562.168-.414.551-.843 1.194-.843.843 0 1.18.636 1.18 1.568V13.5h2.463z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </nav>
+    </header>
+
+    <section class="hero card" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">Eu crio PWAs e sites responsivos que ajudam pequenos negócios a vender mais.</h1>
+        <p class="lead">Especialista em aplicações que funcionam offline, integração com WhatsApp para agendamentos e experiências rápidas em mobile.</p>
+
+        <div class="ctas" role="region" aria-label="Ações principais">
+          <a class="btn" href="#projects">Ver Projetos</a>
+          <a class="btn ghost" href="https://erika918.github.io/erikabarbosacruz.github.io/" target="_blank" rel="noopener noreferrer">Baixar CV</a>
+        </div>
+
+        <div style="margin-top:18px;" class="card" aria-hidden="false">
+          <strong>Skills</strong>
+          <div class="meta" style="margin-top:8px">HTML · CSS · JavaScript · React · PWA · Service Worker · Git · GitHub Pages</div>
+
+          <div class="skills" style="margin-top:12px">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">PWA</span>
+            <span class="skill">A11y</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card" aria-label="Contato rápido">
+        <h4>Contato rápido</h4>
+        <div class="kicker">Siga-me</div>
+        <div class="socials" role="navigation" aria-label="Redes sociais">
+          <a href="mailto:erikaregis42@gmail.com" aria-label="Enviar e-mail">✉️ Email</a>
+          <a href="https://github.com/erika918" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐙 GitHub</a>
+          <a href="https://www.linkedin.com/in/erika-barbosa-da-cruz-587911186/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="display:flex;align-items:center;gap:6px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 13.5V6H2.542v7.5h2.401zm-1.2-8.583c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zM13.458 13.5V9.359c0-2.212-1.178-3.243-2.748-3.243-1.27 0-1.845.7-2.165 1.193V6H6.144c.03.657 0 7.5 0 7.5h2.401V9.611c0-.207.015-.414.076-.562.168-.414.551-.843 1.194-.843.843 0 1.18.636 1.18 1.568V13.5h2.463z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </aside>
+    </section>
+
+    <main>
+      <h2 id="projects" style="margin-top:22px">Projetos em destaque</h2>
+      <div class="projects" role="list">
+<article class="project card" role="listitem" aria-labelledby="espiritual-title">
+<h3 id="espiritual-title">Espiritual • Legalidade — Guia Interativo</h3>
+<p class="meta">Projeto espiritual com reflexões, estudos e conteúdos sobre legalidade espiritual. Desenvolvido em HTML/CSS/JS e publicado no GitHub Pages.</p>
+<div class="project-actions">
+<a class="btn" href="https://erika918.github.io/espiritual-legalidade/" target="_blank" rel="noopener noreferrer" aria-label="Demo Espiritual-Legalidade">Demo</a>
+<a class="btn ghost" href="https://github.com/erika918/espiritual-legalidade" target="_blank" rel="noopener noreferrer" aria-label="Repo Espiritual-Legalidade">Repo</a>
+</div>
+</article>
+
+        <!-- PDI Pessoal (adicionado) -->
+        <article class="project card" role="listitem" aria-labelledby="pdi2-title">
+          <h3 id="pdi2-title">PDI Pessoal</h3>
+          <p class="meta">Ferramenta para organizar metas, estudos, rotinas e progresso profissional. Painel simples para acompanhamento diário.</p>
+          <div class="project-actions">
+            <a class="btn" href="https://erika918.github.io/pdi-pessoal/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="btn ghost" href="https://github.com/erika918/pdi-pessoal" target="_blank" rel="noopener noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <!-- Lembrete do Chá da Evelyn (adicionado) -->
+        <article class="project card" role="listitem" aria-labelledby="chada-title">
+          <h3 id="chada-title">Lembrete do Chá da Evelyn</h3>
+          <p class="meta">Projeto para lembretes e organização do Chá da Evelyn, com layout leve para acesso rápido em mobile.</p>
+          <div class="project-actions">
+            <a class="btn" href="https://erika918.github.io/lembrete-do-chadaevelyn/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="btn ghost" href="https://github.com/erika918/lembrete-do-chadaevelyn" target="_blank" rel="noopener noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <!-- Password-manager (adicionado) -->
+        <article class="project card" role="listitem" aria-labelledby="pwd-title">
+          <h3 id="pwd-title">Password-Manager — Cofre de Senhas (PWA)</h3>
+          <p class="meta">Aplicação PWA para armazenamento local de senhas com suporte offline, PIN e armazenamento local (localStorage).</p>
+          <div class="project-actions">
+            <a class="btn" href="https://erika918.github.io/password-manager/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="btn ghost" href="https://github.com/erika918/password-manager" target="_blank" rel="noopener noreferrer">Repo</a>
+          </div>
+        </article>
+
+      </div>
+
+      <section id="services" style="margin-top:22px">
+        <h2>Serviços</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:10px">
+          <div class="card"><strong>Sites / Landing</strong><div class="meta">Landing responsiva, SEO básico, integração WhatsApp.</div></div>
+          <div class="card"><strong>PWA & Offline</strong><div class="meta">Instalável, cache inteligente, Service Worker.</div></div>
+          <div class="card"><strong>Consultoria</strong><div class="meta">Melhoria de performance, acessibilidade e conversão.</div></div>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:22px">
+        <h2>Contato</h2>
+        <p class="meta">Se quiser conversar sobre um projeto, estou à disposição! Acesse meu e-mail ou GitHub.</p>
+        <p style="margin-top:8px">
+          <a class="btn" href="mailto:erikaregis42@gmail.com">Enviar e-mail</a>
+          <a class="btn" href="https://github.com/erika918" target="_blank" rel="noopener noreferrer" style="background:#333">GitHub</a>
+        </p>
+
+        <div style="margin-top:12px;color:var(--muted)">
+        
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2025 Erika Barbosa
+    </footer>
+  </div>
+</body>
+</html>
