@@ -28,7 +28,7 @@
     :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#0ea5a4;--glass: rgba(255,255,255,0.03);--radius:14px}
     *{box-sizing:border-box}
     body{font-family:Inter,system-ui,Segoe UI,Arial;margin:0;background:linear-gradient(180deg,#071027 0%,#081428 100%);color:#e6eef6;line-height:1.45;padding:28px 18px;display:flex;justify-content:center}
-    .wrap{width:100%;max-width:1100px}
+    .wrap{width:100%;max-width:1100px scroll-behavior:smooth;}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
     .brand{display:flex;gap:12px;align-items:center}
     .avatar{width:64px;height:64px;border-radius:12px;overflow:hidden;border:2px solid rgba(255,255,255,0.06);background:var(--glass);flex:0 0 auto}
@@ -59,6 +59,19 @@
     .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
     .skill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
     .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    /* >>> COLE AQUI <<< */
+.project-desc{
+  font-size:14px;
+  color:#cfcfcf;
+  margin:10px 0 10px 0;
+  line-height:1.6;
+}
+
+.project-result{
+  font-size:13px;
+  color:#9ae6b4;
+  margin-bottom:12px;
+}
 
     /* responsive */
     @media (max-width:980px){.hero{grid-template-columns:1fr}nav{display:none}}
@@ -136,48 +149,114 @@
     </section>
 
     <main>
-      <h2 id="projects" style="margin-top:22px">Projetos em destaque</h2>
-      <div class="projects" role="list">
-<article class="project card" role="listitem" aria-labelledby="espiritual-title">
-<h3 id="espiritual-title">Espiritual • Legalidade — Guia Interativo</h3>
-<p class="meta">Projeto espiritual com reflexões, estudos e conteúdos sobre legalidade espiritual. Desenvolvido em HTML/CSS/JS e publicado no GitHub Pages.</p>
-<div class="project-actions">
-<a class="btn" href="https://erika918.github.io/espiritual-legalidade/" target="_blank" rel="noopener noreferrer" aria-label="Demo Espiritual-Legalidade">Demo</a>
-<a class="btn ghost" href="https://github.com/erika918/espiritual-legalidade" target="_blank" rel="noopener noreferrer" aria-label="Repo Espiritual-Legalidade">Repo</a>
-</div>
-</article>
+  <h2 id="projects" style="margin-top:22px">Projetos em destaque</h2>
+  <div class="projects" role="list">
 
-        <!-- PDI Pessoal (adicionado) -->
-        <article class="project card" role="listitem" aria-labelledby="pdi2-title">
-          <h3 id="pdi2-title">PDI Pessoal</h3>
-          <p class="meta">Ferramenta para organizar metas, estudos, rotinas e progresso profissional. Painel simples para acompanhamento diário.</p>
-          <div class="project-actions">
-            <a class="btn" href="https://erika918.github.io/pdi-pessoal/" target="_blank" rel="noopener noreferrer">Demo</a>
-            <a class="btn ghost" href="https://github.com/erika918/pdi-pessoal" target="_blank" rel="noopener noreferrer">Repo</a>
-          </div>
-        </article>
+    <article class="project card" role="listitem" aria-labelledby="espiritual-title">
+      <h3 id="espiritual-title">Espiritual • Legalidade — Guia Interativo</h3>
 
-        <!-- Lembrete do Chá da Evelyn (adicionado) -->
-        <article class="project card" role="listitem" aria-labelledby="chada-title">
-          <h3 id="chada-title">Lembrete do Chá da Evelyn</h3>
-          <p class="meta">Projeto para lembretes e organização do Chá da Evelyn, com layout leve para acesso rápido em mobile.</p>
-          <div class="project-actions">
-            <a class="btn" href="https://erika918.github.io/lembrete-do-chadaevelyn/" target="_blank" rel="noopener noreferrer">Demo</a>
-            <a class="btn ghost" href="https://github.com/erika918/lembrete-do-chadaevelyn" target="_blank" rel="noopener noreferrer">Repo</a>
-          </div>
-        </article>
+      <p class="meta">
+        Guia interativo com reflexões e estudos sobre legalidade espiritual, organizado
+        para leitura simples, navegação intuitiva e acesso rápido em dispositivos móveis.
+        Desenvolvido com HTML, CSS e JavaScript e publicado no GitHub Pages.
+      </p>
 
-        <!-- Password-manager (adicionado) -->
-        <article class="project card" role="listitem" aria-labelledby="pwd-title">
-          <h3 id="pwd-title">Password-Manager — Cofre de Senhas (PWA)</h3>
-          <p class="meta">Aplicação PWA para armazenamento local de senhas com suporte offline, PIN e armazenamento local (localStorage).</p>
-          <div class="project-actions">
-            <a class="btn" href="https://erika918.github.io/password-manager/" target="_blank" rel="noopener noreferrer">Demo</a>
-            <a class="btn ghost" href="https://github.com/erika918/password-manager" target="_blank" rel="noopener noreferrer">Repo</a>
-          </div>
-        </article>
+      <p class="project-desc">
+        Objetivo: organizar conteúdos extensos de forma clara e acessível.
+        Problema resolvido: dificuldade de navegação e leitura em materiais longos.
+        Minha participação: estruturação da navegação, layout responsivo e experiência do usuário.
+      </p>
 
+      <p class="project-result">
+        ✔ Aprendizado: organização de conteúdo longo com foco em usabilidade.<br>
+        ✔ Resultado: leitura fluida e navegação simples no mobile.
+      </p>
+
+      <div class="project-actions">
+        <a class="btn" href="https://erika918.github.io/espiritual-legalidade/" target="_blank" rel="noopener noreferrer">Demo</a>
+        <a class="btn ghost" href="https://github.com/erika918/espiritual-legalidade" target="_blank" rel="noopener noreferrer">Repo</a>
       </div>
+    </article>
+
+
+    <article class="project card" role="listitem" aria-labelledby="pdi2-title">
+      <h3 id="pdi2-title">PDI Pessoal</h3>
+
+      <p class="meta">
+        Ferramenta para organizar metas, estudos, rotinas e evolução profissional
+        com acompanhamento diário simples e direto.
+      </p>
+
+      <p class="project-desc">
+        Objetivo: ajudar no acompanhamento de metas pessoais e profissionais.
+        Problema resolvido: falta de organização e visualização do progresso.
+        Minha participação: criação do painel, estrutura dos dados e interface amigável.
+      </p>
+
+      <p class="project-result">
+        ✔ Aprendizado: criação de painéis funcionais focados em produtividade.<br>
+        ✔ Resultado: acompanhamento diário rápido e prático.
+      </p>
+
+      <div class="project-actions">
+        <a class="btn" href="https://erika918.github.io/pdi-pessoal/" target="_blank" rel="noopener noreferrer">Demo</a>
+        <a class="btn ghost" href="https://github.com/erika918/pdi-pessoal" target="_blank" rel="noopener noreferrer">Repo</a>
+      </div>
+    </article>
+
+
+    <article class="project card" role="listitem" aria-labelledby="chada-title">
+      <h3 id="chada-title">Lembrete do Chá da Evelyn</h3>
+
+      <p class="meta">
+        Aplicação leve para lembretes e organização de evento, com foco em acesso rápido no celular.
+      </p>
+
+      <p class="project-desc">
+        Objetivo: organizar tarefas e prazos do evento de forma simples.
+        Problema resolvido: esquecimento de itens e prazos importantes.
+        Minha participação: desenvolvimento do layout mobile e estrutura de lembretes.
+      </p>
+
+      <p class="project-result">
+        ✔ Aprendizado: foco em interface simples e objetiva.<br>
+        ✔ Resultado: acesso rápido às informações no dia a dia.
+      </p>
+
+      <div class="project-actions">
+        <a class="btn" href="https://erika918.github.io/lembrete-do-chadaevelyn/" target="_blank" rel="noopener noreferrer">Demo</a>
+        <a class="btn ghost" href="https://github.com/erika918/lembrete-do-chadaevelyn" target="_blank" rel="noopener noreferrer">Repo</a>
+      </div>
+    </article>
+
+
+    <article class="project card" role="listitem" aria-labelledby="pwd-title">
+      <h3 id="pwd-title">Password-Manager — Cofre de Senhas (PWA)</h3>
+
+      <p class="meta">
+        Aplicação PWA para armazenamento local de senhas com funcionamento offline,
+        proteção por PIN e uso de localStorage.
+      </p>
+
+      <p class="project-desc">
+        Objetivo: criar um cofre de senhas leve que funcione sem internet.
+        Problema resolvido: dependência de apps externos e falta de privacidade local.
+        Minha participação: implementação do modo offline, segurança por PIN e estrutura PWA.
+      </p>
+
+      <p class="project-result">
+        ✔ Aprendizado: uso de Service Worker e cache offline.<br>
+        ✔ Resultado: app rápido, seguro e totalmente funcional no mobile.
+      </p>
+
+      <div class="project-actions">
+        <a class="btn" href="https://erika918.github.io/password-manager/" target="_blank" rel="noopener noreferrer">Demo</a>
+        <a class="btn ghost" href="https://github.com/erika918/password-manager" target="_blank" rel="noopener noreferrer">Repo</a>
+      </div>
+    </article>
+
+  </div>
+</main>
 
       <section id="services" style="margin-top:22px">
         <h2>Serviços</h2>
@@ -200,7 +279,6 @@
         
         </div>
       </section>
-    </main>
 
     <footer>
       © 2025 Erika Barbosa
